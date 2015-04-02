@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "id": "http://jsonschema.net/Title",
+      "type": "string"
+    },
+    "Creator": {
+      "id": "http://jsonschema.net/Creator",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/Creator/0",
+        "type": "string"
+      }
+    },
+    "Subject": {
+      "id": "http://jsonschema.net/Subject",
+      "type": "string"
+    },
+    "Description": {
+      "id": "http://jsonschema.net/Description",
+      "type": "string"
+    },
+    "Publisher": {
+      "id": "http://jsonschema.net/Publisher",
+      "type": "string"
+    },
+    "Contributor": {
+      "id": "http://jsonschema.net/Contributor",
+      "type": "string"
+    },
+    "Date": {
+      "id": "http://jsonschema.net/Date",
+      "type": "string"
+    },
+    "Type": {
+      "id": "http://jsonschema.net/Type",
+      "type": "string"
+    },
+    "Format": {
+      "id": "http://jsonschema.net/Format",
+      "type": "string"
+    },
+    "Identifier": {
+      "id": "http://jsonschema.net/Identifier",
+      "type": "string"
+    },
+    "Source": {
+      "id": "http://jsonschema.net/Source",
+      "type": "string"
+    },
+    "Language": {
+      "id": "http://jsonschema.net/Language",
+      "type": "string"
+    },
+    "Relation": {
+      "id": "http://jsonschema.net/Relation",
+      "type": "string"
+    },
+    "Coverage": {
+      "id": "http://jsonschema.net/Coverage",
+      "type": "string"
+    },
+    "Rights": {
+      "id": "http://jsonschema.net/Rights",
+      "type": "string"
+    }
+  }
+  
+}

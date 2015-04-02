@@ -1,0 +1,27 @@
+{
+
+    "Directories": {
+        "infodb": "/var/lib/garam/",
+        "schema": "schema/"
+    },
+    "Projects": {
+    	"red": {
+
+    	},
+    	"orange": {
+
+    	},
+    	"yellow": {
+
+    	},
+    	"green": {
+
+    	},
+    	"blue": {
+
+    	},
+    	"purple": {
+
+    	}
+    }
+}

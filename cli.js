@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 var meow = require('meow');
+var Sync = require('sync');
 var garam = require('./');
 
 var cli = meow({
@@ -13,4 +14,13 @@ var cli = meow({
   ].join('\n')
 });
 
-garam(cli.input[0]);
+var about = function(value, callback) {
+	garam.about(value,callback);
+};
+//garam(cli.input[0]);
+Sync(function(){
+    var result = about.sync(null);
+    console.log(result); 
+});
+
+
