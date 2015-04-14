@@ -1,5 +1,6 @@
 'use strict';
 var request = require('request');
+var yaml = require('js-yaml');
 
 var garamUrl = function(path) {
     return "http://localhost:3000/" + path;
@@ -32,8 +33,8 @@ var info = function(project, schema, id, callback) {
 var about = function(callback) {
     request(garamUrl("about"), function(error, response, body) {
         if (!error && response.statusCode === 200) {
-            console.log(body);
-            callback(null, "ok");
+            console.log(yaml.dump(JSON.parse(body)));
+            callback(null, body);
         } else {
             console.log(error);
             callback(error);

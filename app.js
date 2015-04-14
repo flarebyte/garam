@@ -3,7 +3,14 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-//require('pkginfo')(module, 'version', 'name');
+require('pkginfo')(module, 'version', 'name', 'description', 'author');
+
+var about = {
+    name: module.exports.name,
+    version: module.exports.version,
+    description: module.exports.description,
+    author: module.exports.author
+};
 
 var app = express();
 
@@ -17,15 +24,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /* GET home page. */
 app.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+    res.render('index', {
+        title: 'Express'
+    });
 });
 
 app.get('/about', function(req, res) {
-  res.json({author: "olivier huin"});
+    res.json(about);
 });
 
-app.post('/oli', function (req, res) {
+app.post('/oli', function(req, res) {
     console.log(req.body);
     res.send("ha");
-}); 
+});
 module.exports = app;
