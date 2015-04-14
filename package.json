@@ -11,7 +11,7 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "cli.js"
+    "grm.js"
   ],
   "keywords": [
     "garam",
@@ -62,6 +62,6 @@
     "browser": "browserify index.js > browser.js"
   },
   "bin": {
-    "garam": "cli.js"
+    "garam": "grm.js"
   }
 }
